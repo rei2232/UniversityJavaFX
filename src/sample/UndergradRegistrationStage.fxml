@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UndergradRegistrationController">
+   <children>
+      <TableView layoutX="50.0" layoutY="37.0" prefHeight="362.0" prefWidth="700.0" />
+      <Label layoutX="50.0" layoutY="428.0" text="Show courses registered for student #: " />
+      <Label layoutX="50.0" layoutY="458.0" text="Show student(s) whose name is/contains" />
+      <Label layoutX="50.0" layoutY="488.0" text="Show students registered in" />
+      <Label layoutX="50.0" layoutY="518.0" text="Show students who have registered for this course code:" />
+      <Label layoutX="50.0" layoutY="548.0" text="Show students who have registered for a course named:" />
+      <TextField fx:id="txtStudentNumber" layoutX="272.0" layoutY="424.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtStudentName" layoutX="287.0" layoutY="454.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtSemester" layoutX="220.0" layoutY="484.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtCourseCode" layoutX="369.0" layoutY="514.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtCourseName" layoutX="369.0" layoutY="544.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="404.0" layoutY="488.0" text="semester" />
+      <Button fx:id="btnStudentsNumber" layoutX="475.0" layoutY="424.0" mnemonicParsing="false" text="Show" />
+      <Button fx:id="btnStudentName" layoutX="484.0" layoutY="454.0" mnemonicParsing="false" text="Show" />
+      <Button fx:id="btnSemester" layoutX="467.0" layoutY="484.0" mnemonicParsing="false" text="Show" />
+      <Button fx:id="btnCourseCode" layoutX="560.0" layoutY="514.0" mnemonicParsing="false" text="Show" />
+      <Button fx:id="btnCourseName" layoutX="560.0" layoutY="544.0" mnemonicParsing="false" text="Show" />
+      <Button fx:id="btnShowAll" layoutX="642.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Show All Records" />
+      <Button fx:id="btnClose" layoutX="663.0" layoutY="544.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="85.0" text="Close" />
+   </children>
+</AnchorPane>
