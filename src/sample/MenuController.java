@@ -31,7 +31,18 @@ public class MenuController {
     }
 
     public void btnGraduateStudents(ActionEvent e) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("GraduateStudentsStage.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+//            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("University - Graduate Students");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
     }
 
     public void btnUndergraduateRegistration(ActionEvent e) {
@@ -50,7 +61,18 @@ public class MenuController {
     }
 
     public void btnGraduateRegistrations(ActionEvent e) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("GradStudentsRegistrationStage.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+//            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("University - Graduate Registration");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
     }
 
     public void btnUndergraduateMajors(ActionEvent e) {
@@ -69,11 +91,33 @@ public class MenuController {
     }
 
     public void btGraduateMajors(ActionEvent e) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("GradMajorsStage.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+//            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("University - Employees");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
     }
 
     public void btnEmployeees(ActionEvent e) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EmployeeStage.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+//            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("University - Employees");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
     }
     public void close(ActionEvent e) { // close stage
         Stage stage = (Stage) btnClose.getScene().getWindow();
